@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 10px;
+    background: rgb(30, 9, 114);
+    color: #fff;
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.44);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.4px);
+    -webkit-backdrop-filter: blur(7.4px);
+    padding: 30px 60px;
+    border-radius: 10px;
+    text-align: center;
+    gap: 20px;
+}
+
+main .container form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+main .container form div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main .container form div label {
+    font-size: 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+main .container form div input, main .container form div select {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    outline: none;
+    border: none;
+}
+
+main .container form input[type='submit'] {
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #0fb2f8;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+main .container form input[type='submit']:hover {
+    background-color: transparent;
+    color: #0fb2f8;
+    border: 1px solid #0fb2f8;
+}
+
+main .container .resultado {
+    height: 40px;
+    width: 100%;
+    font-size: 25px;
+    padding: 10px 20px 170px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+}
+
+main .container .resultado .campo_resultado {
+    padding-block: 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+main .container .resultado .campo_resultado #limpar {
+    background-color: #cc1d1d;
+    margin-top: 20px;
+}
+
+main .container .resultado .campo_resultado #limpar:hover {
+    color: #fff;
+    border: none;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão Binária</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>Conversão Decimal</h1>
+            <hr>
+
+            <form action="/converter" method="post">
+                <div>
+                    <label for="campo_decimal">Digite o valor Decimal:</label>
+                    <input type="number" name="decimal" id="campo_decimal" required>
+                </div>
+
+                <div>
+                    <label for="campo_escolha">Escolha a Conversão:</label>
+                    <select name="escolha" id="campo_escolha" required>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="binario">Binário</option>
+                        <option value="octadecimal">Octadecimal</option>
+                        <option value="hexadecimal">Hexadecimal</option>
+                    </select>
+                </div>
+
+                <input type="submit" value="Calcular">
+            </form>
+
+            <hr>
+
+            <div class="resultado">
+                <p>Resultado</p>
+                <div class="campo_resultado">
+                    {% if resultado %}
+                        {{ resultado }}
+                        <form action="/" method="get">
+                            <input id="limpar" type="submit" value="Limpar">
+                        </form>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;Desenvolvido por Lucas Bonde</p>
+    </footer>
+</body>
+
+</html>
