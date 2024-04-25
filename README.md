@@ -26,3 +26,22 @@ Para utilizar este projeto, siga estas etapas:
 
 ```bash
 git clone https://github.com/seu_usuario/conversao-decimal-flask.git
+```
+
+2. Navegue até o diretório:
+
+```bash
+cd conversao-decimal-flask
+```
+
+3. Execute o aplicativo:
+
+```bash
+python app.py
+```
+
+4. Abra um navegador da web e acesse o seguinte endereço:
+
+```bash
+http://localhost:5000
+```
