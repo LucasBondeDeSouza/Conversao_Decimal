@@ -45,3 +45,14 @@ python app.py
 ```bash
 http://localhost:5000
 ```
+
+## Tecnologias Utilizadas
+
+- Python
+- Flask
+- HTML5
+- CSS3
+
+## Autor
+
+Este projeto foi desenvolvido por Lucas Bonde (https://github.com/LucasBondeDeSouza).
