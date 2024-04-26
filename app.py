@@ -9,7 +9,9 @@ def decimal_to_octal(decimal):
     return oct(decimal)[2:]
 
 def decimal_to_hexadecimal(decimal):
-    return hex(decimal)[2:]
+    hex_string = hex(decimal)[2:]
+    hex_string = hex_string.replace('a', 'A').replace('b', 'B').replace('c', 'C').replace('d', 'D').replace('e', 'E').replace('f', 'F')
+    return hex_string
 
 @app.route('/')
 def index():
