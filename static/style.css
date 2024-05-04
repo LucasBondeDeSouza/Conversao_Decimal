@@ -22,7 +22,7 @@ main .container {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(7.4px);
     -webkit-backdrop-filter: blur(7.4px);
-    padding: 30px 60px;
+    padding: 20px 30px;
     border-radius: 10px;
     text-align: center;
     gap: 20px;
